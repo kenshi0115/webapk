@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ <head>
+ <meta charset="utf-8">
+ <title>サイトタイトル</title>
+ <link rel="stylesheet" href="/css/style.css">
+ </head>
+ <div id = "main">
+     <div class ="bar" id="bar">
+         <div class="red" id = "red">
+     <img class="red1" id="pic1" src="/images/red.png"  width="10%" height="10%">
+     <script>
+        document.getElementById("pic1").style.position="absolute";
+        document.getElementById("pic1").style.left= Math.random()*90 +"%";
+        document.getElementById("pic1").style.top= Math.random()*90+"%";
+        setTimeout(()=>{
+if(1>0.5){
+            document.getElementById("pic1").style.transform="rotate("+90+"deg)";
+        };
+    },2000);
+     </script>
+     <img class="red2" id="pic2" src="/images/red.png"  width="10%" height="10%">
+          <script>
+             document.getElementById("pic2").style.position="absolute";
+             document.getElementById("pic2").style.left= Math.random()*90 +"%";
+             document.getElementById("pic2").style.top= Math.random()*90+"%";
+          </script>
+         </div>  
+         <div class="blue" id="blue">
+                <img  id= "blue0"  src="/images/red.png"  width="10%" height="10%">
+                <script>
+                   document.getElementById("blue0").style.position="absolute";
+                   document.getElementById("blue0").style.left= Math.random()*90 +"%";
+                   document.getElementById("blue0").style.top= Math.random()*90+"%";
+                </script>
+                <img  id= "blue1"  src="/images/red.png"  width="10%" height="10%">
+                <script>
+                   document.getElementById("blue1").style.position="absolute";
+                   document.getElementById("blue1").style.left= Math.random()*90 +"%";
+                   document.getElementById("blue1").style.top= Math.random()*90+"%";
+                </script>
+                <img  id= "blue2"  src="/images/red.png"  width="10%" height="10%">
+                <script>
+                   document.getElementById("blue2").style.position="absolute";
+                   document.getElementById("blue2").style.left= Math.random()*90 +"%";
+                   document.getElementById("blue2").style.top= Math.random()*90+"%";
+                </script>
+                <img  id= "blue3"  src="/images/red.png"  width="10%" height="10%">
+                <script>
+                   document.getElementById("blue3").style.position="absolute";
+                   document.getElementById("blue3").style.left= Math.random()*90 +"%";
+                   document.getElementById("blue3").style.top= Math.random()*90+"%";
+                </script>
+                <img  id= "blue3"  src="/images/red.png"  width="10%" height="10%">
+                <script>
+                   document.getElementById("blue3").style.position="absolute";
+                   document.getElementById("blue3").style.left= Math.random()*90 +"%";
+                   document.getElementById("blue3").style.top= Math.random()*90+"%";
+                </script>
+         </div> 
+    </div>   
+     <form class ="change" id="change" action="/test4" method="post" > 
+         <input type="radio" name="change" value="1" checked="checked">変化した
+         <input type="radio" name="change" value="0">変化していない
+         <input class="start" type="submit" value="次">
+     </form>
+          <script>              
+              setTimeout(()=>{
+                document.getElementById("bar").style.opacity=0;
+            },1000);
+              setTimeout(()=>{
+                document.getElementById("bar").style.opacity=1;
+            },2000);
+          </script>
+          <script> 
+          document.getElementById("change").style.opacity=0;
+          setTimeout(()=>{
+                document.getElementById("change").style.opacity=1;
+            },2000);
+        </script>   
+ </div>
+ </body>
+</html>
